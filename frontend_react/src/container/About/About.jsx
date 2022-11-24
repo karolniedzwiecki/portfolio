@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './About.scss';
-import { images } from '../../constants';
 import { urlFor, client } from '../../client';
+import { AppWrap } from '../../wrapper';
 
 {/*const abouts = [
   {title: 'Web Development', description: 'I am a good developer.', imgUrl: images.about01 },
@@ -46,4 +46,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'about');
